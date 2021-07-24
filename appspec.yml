@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: .
+    destination: /home/r-0-user/
+
+hooks:
+  AfterInstall:
+    - location: setup.sh
+      timeout: 300
+      runas: root
+
+  ApplicationStart:
+    - location: run.sh
+      timeout: 300
+      runas: root
