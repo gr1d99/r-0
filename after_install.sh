@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo 'heeeeey it works' > yeey.txt
+cd /home/ubuntu/ && chown -R $USER . && echo 'heeeeey it works' > yeey.txt
